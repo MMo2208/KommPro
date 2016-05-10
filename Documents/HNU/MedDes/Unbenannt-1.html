@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>IMUK DAY1</title>
+    
+        <style>
+            
+            *{
+                margin:0;
+                padding:0;
+                color: yellow;
+            }
+            
+            h1 {
+                color:red;
+            }
+            
+            div {
+                color:blue;
+            }
+            
+            .firstbox {
+                color:blue;
+                    width:300px;
+                    height:300px;
+                    background-color: red;
+                    padding: 20px;            /* margin: Innnenabstand,padding: außenabstand */
+                    margin: 0 0 40px 20px;      /* top right bottom left */
+            }
+            
+            .greenBox {
+                background-color: green;
+                border: 10px solid black; 
+                
+            }
+            .secondBox {
+                    color: green;
+                    width: 200px;
+                    padding: 20px;
+                    background-color: chartreuse;
+                }
+            
+            /* needs to have both classes */
+            .secondBox.greenBox {
+                color: white;
+            }
+
+            .relBox{
+                width: 200px;
+                background-color: purple;
+                padding: 20px;
+                position: relative;
+            }
+            
+            .sideBar {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                width: 200px;
+                background-color: darkred;
+            }
+            
+            .absBox {
+                position: absolute;
+                background-color: aqua;
+                width: 200px;
+                padding: 20px;
+                bottom:20px;
+                left: 50%;
+                margin-left: -100px;
+            }
+        </style>
+    
+    
+    
+    </head>
+    <body>
+        <h1> First headline </h1>
+        <div class="firstbox">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </div>
+        
+        <div class="firstbox greenBox">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </div>
+                
+        <div class="secondBox greenBox">
+            Second Box
+        </div>
+        
+        <div class="relBox">
+            rel Box
+        </div>
+
+        <div class="sideBar">
+            <h1>'sget ab</h1>
+        </div>
+
+        <div class="absBox">
+            down
+        </div>
+    </body>
+
+
+
+
+</html>
